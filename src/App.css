@@ -1,38 +1,290 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  cursor: pointer;
 }
+body{
+  background-color: black;
+}
+.nav{
+  background-color: black;
+  width: 35%;
+  height: 93.5vh;
+  position: fixed;
+  padding: 5px;
+  top: 0px;
+}
+.part1{
+  background-color: #121212;
+  height: 22%;
+  margin: 5px;
+  margin-bottom: 8px;
+  border-radius: 15px;
+  padding: 27px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.part1 ul{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  height: 100%;
+}
+.part1 ul li{
+list-style: none;
+}
+.part1 ul li a i,
+.part1 ul li a svg{
+  width: 26px;
+  fill: #fff;
+  display: inline-block;
+  font-weight: 100;
+  height: 22px;
+  font-size: 22px;
+  top: -3px;
+  color: #B3B3B3;
+  margin-left: -45px;
+  position: absolute;
+  margin-right: 20px;
+}
+.part1 ul li a {
+  color: #B3B3B3;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding-left: 40px;
+  position: relative;
+  font-weight: 600;
+  margin-top: -5px;
+}
+.active{
+  color: #fff!important;
+  font-weight: 700!important;
+}
+.part2{
+  background-color: #121212;
+  height: 80%;
+  margin: 5px;
+  border-radius: 15px;
+  padding: 20px 24px;
+}
+h1{
+  font-size: 15px;
+  position: relative;
+  padding-left: 37px;
+  color: #B3B3B3;
+  margin-bottom: 10px;
+}
+h1 svg{
+  position: absolute;
+  fill: #B3B3B3;
+  margin-left: -37px;
+  top: -5px;
+}
+.playlist{
+  padding: 8px 12px;
+  margin: 17px -10px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: none;
+  font-weight: 600;
   color: white;
+  background-color: #ffffff12;
+}
+.icons{
+  display: flex;
+  color: #B3B3B3;
+  margin-bottom: 10px;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.icons svg{
+  fill: #B3B3B3;
+  top: 0px;
+  margin-left: 10px;
+  position: absolute;
+}
+.icons p{
+  font-weight: 600;
+  position: relative;
+  font-size: 15px;
+  padding-right: 15px;
+  letter-spacing: 0.5px;
+}
+.trending{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #fff;
+  font-size: 15px;
+  gap: 10px;
+  padding: 20px 0px;
+}
+.trending .img img{
+  border-radius: 4px;
+}
+.trending .dis{
+  display: flex;
+  flex-direction: column;
+  vertical-align:middle;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+.trending .dis p:nth-child(1){
+  font-weight: 700;
+}
+.trending .dis p:nth-child(2){
+  color: #B3B3B3;
+  font-size: 0.8rem;
+}
+.lang{
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #B3B3B3;
+  padding: 7px;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  bottom: 40px;
+  left: 38%;
+}
+.lang i{
+  color: #fff;
+}
+.homediv{
+  width: 64%;
+  background-color: #1b1b1b;
+  height: 95vh;
+  position: relative;
+  right: -35%;
+  margin: 10px 0px;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+.homenav {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #1b1b1b;
+  z-index: 1;
+  top: 0px;
+  height: 12vh;
+  overflow: hidden;
+}
+.btn button{
+  border: none;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px 6px;
+  font-size: 1.2rem;
+  background-color: #000;
+  border-radius: 50%;
+}
+.mr-10{
+  margin-right: 10px;
+}
+.btn button i{
+  color: #fff; 
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+  font-family: 'Dancing Script', cursive;
+  color: #00ff00;
+  font-size: 4vw;
+  position: relative;
+  margin-right: 20vw;
+  top: -1vw;
+  text-shadow: 0px 0px 10px #9fff9f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.newcollection{
+  padding: 1px 10px;
+}
+h3{
+  display: block;
+  font-size: 2vw;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+.items{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.item{
+  height: 42vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 180px;
+  cursor: pointer;
+  position: relative;
+  background-color: #181818;
+  margin: 10px;
+  box-shadow: 0px 0px 4px #B3B3B3;
+  border-radius: 10px;
+}
+.item img{
+  width: 83%;
+  height: 65%;
+  object-fit: cover;
+  margin: 10px 15px;
+}
+.item div{
+  display: initial;
+  color: black;
+  background-color: #00ff00;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  right: 10px;
+  z-index: 1;
+  bottom: 70px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+}
+.item div i{
+  position: absolute;
+  top: 4px;
+  left: 6px;
+}
+h4{
+  color: #fff;
+  padding: 0px 5px;
+}
+.item p{
+  color: #B3B3B3;
+  font-size: 13px;
+  width: 90%;
+  margin: auto;
+}
+.item:hover{
+  background-color: #282828;
+}
+
+/* Search Page  */
+.searchpg{
+  width: 64%;
+  background-color: #ff0000;
+  height: 95vh;
+  position: relative;
+  right: -35%;
+  margin: 10px 0px;
+  border-radius: 10px;
+  overflow-y: auto;
 }
