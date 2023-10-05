@@ -259,6 +259,14 @@ h3 {
   gap: 20px;
 }
 
+h9{
+  font-size: 2rem;
+  margin: 1rem 0.5rem;
+  height: 30px;
+  display: block;
+  color: #fff;
+}
+
 .item {
   height: 42vh;
   display: flex;
@@ -319,11 +327,10 @@ h4 {
 
 /* Search Page  */
 .searchpg {
-  width: 64%;
-  background-color: #ff0000;
-  height: 95vh;
+  width: 68%;
+  background-color: #1b1b1b;
   position: relative;
-  right: -35%;
+  right: -31.5%;
   margin: 10px 0px;
   border-radius: 10px;
   overflow-y: auto;

@@ -9,21 +9,20 @@ export default function SongDashboard({
   playPrev,
   activeIndex,
   duration,
-  newcollection,
-  dbnone,
+  playlist,
   formatTime
 }) {
 
   return (
     <>
-      {dbnone !== null && <div className="dashboard">
+      {activeIndex !== null && <div className="dashboard">
         {activeIndex !== null && (
           <div className="currentsginfo">
             <div className="imgnname">
-              <img src={newcollection[activeIndex].img} alt={newcollection[activeIndex].songName} /></div>
+              <img src={playlist[activeIndex].img} alt={playlist[activeIndex].songName} /></div>
             <div className="sgname">
-              <h5>{newcollection[activeIndex].songName}</h5>
-              <h6>{newcollection[activeIndex].singer}</h6>
+              <h5>{playlist[activeIndex].songName}</h5>
+              <h6>{playlist[activeIndex].singer}</h6>
             </div>
           </div>
         )}
