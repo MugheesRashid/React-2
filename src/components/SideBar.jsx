@@ -21,7 +21,7 @@ export default function SideBar(props){
               <li onClick={
                 props.playlistchanger1
               }>
-                <Link to="/AllSongs">
+                <Link to="/allsongs">
                   <i className="bi bi-search"></i>All Songs
                 </Link>
               </li>
@@ -60,7 +60,7 @@ export default function SideBar(props){
                   </svg>
                 </p>
               </div>
-              <div className="trending">
+              <div oncli className="trending">
                 <div className="img">
                   <img
                     src="https://i.scdn.co/image/ab67706f00000002b7b131141bb0d0c9ee8faf05"

@@ -29,7 +29,7 @@ export default function SongDashboard({
         <div className="controls">
           <div className="db-btn">
             <i onClick={playPrev} className="bi bi-skip-start-fill"></i>
-            <i onClick={togglePlay} className={`bi ${isPlaying ? 'bi-pause-fill' : 'bi-play-fill'}`}> </i>
+            <i onClick={togglePlay} className={`bi ${isPlaying ? 'bi-pause-fill' : 'bi-play-fill'}`}></i>
             <i onClick={playNext} className="bi bi-skip-end-fill"></i>
           </div>
           <div className="db-range">
