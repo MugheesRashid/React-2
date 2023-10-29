@@ -494,8 +494,21 @@ h7{
   background-color: #00ff00;
 }
 
-@media (max-width="400px"){
-  body{
-    display: none;
+@media (max-width: 850px){
+  .responsivent{
+    display: initial;
   }
+}
+@media (max-width: 550px){
+  .responsivent{
+    display: initial;
+  }
+  h11{
+    width: 300px;
+    font-size: 36px;
+  }
+  .rsnote i::before{
+    margin:0px 18px;
+  }
+
 }
