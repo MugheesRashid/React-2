@@ -41,6 +41,8 @@ import yeladkiyan from "./Musics/yeladkiyan.mp3"
 import mehindilagakeyrakhna from "./Musics/MehndiLagaKeRakhna.mp3"
 import LatheyDiChadar from "./Musics/LatheyDiChaadar.mp3"
 import mehindisg from "./Musics/Mehendi.mp3"
+import TumMera from "./Musics/tumMera.mp3"
+
 
 
 
@@ -55,16 +57,15 @@ import {
  
 
   function App(){
-    console.log(Childhood)
 
-    const weddingmehindi = [
+     const weddingmehindi = [
     {img: 'https://i.scdn.co/image/ab67616d00001e028b0cf882235c7ef59eb77a5f',fileLocation: mehindihairachneywali,songName: 'Mehindi Hai Rachney Wala' ,singer: 'Nil'},
     {img: 'https://i.scdn.co/image/ab67616d00001e020553935df95aaa9381f4fc66',fileLocation: mehindilagakeyrakhna,songName: 'Mehindi Laga Key Rahkna' ,singer: 'Nil'},
     {img: 'https://i.scdn.co/image/ab67616d00001e024fa869efddd5358308f3d9a7',fileLocation: mehindisg,songName: 'Mehendi' ,singer: 'Nil'},
     {img: 'https://i.scdn.co/image/ab67616d00001e0263c750e8bc80c74de4e644d8',fileLocation: LatheyDiChadar,songName: 'Lathey Di Chadar' ,singer: 'Nil'},
     {img: 'https://i.scdn.co/image/ab67616d00001e02941eb533e845e5c2299570b9',fileLocation: yeladkiyan,songName: 'Ye Ladkiyan Hai Allah' ,singer: 'Nil'},
 
-  ]
+    ]
      const newcollection =[
      {img: 'https://i.scdn.co/image/ab67616d00001e02f10ef7774581590cf480ed5c',fileLocation: GaltiSeMistake, songName: 'Ghalti Se Mistake' ,singer: 'Pritam, Arjeet Singh, Amit Mishra'},
      {img: 'https://i.scdn.co/image/ab67616d0000b2736791de7e8fc53f8710a8ca17' ,fileLocation: GhalatFehmi,songName: 'Tarasti hai Nigahain' ,singer: 'Asim Azhar,Mahira Khan'}, 
@@ -104,11 +105,12 @@ import {
       {img: 'https://i.scdn.co/image/ab67616d0000b2736791de7e8fc53f8710a8ca17' ,fileLocation: GhalatFehmi,songName: 'Tarasti hai Nigahain' ,singer: 'Asim Azhar,Mahira Khan'}, 
       {img: 'https://tse1.mm.bing.net/th?id=OIP.5DW1_3hUi9lURqTCmLBI7gHaFj&pid=Api&P=0&h=180' ,fileLocation: HumTeraBina, songName: 'Tum Hi Ho' ,singer: 'Arijit Singh' },  
       {img: 'https://i.scdn.co/image/ab67616d00001e02709a2b476833289c2067ec15',fileLocation: TumheDillagi,songName: 'Tumhe Dillagi Bhool Jane' ,singer: 'Nusrat Fateh Ali Khan'}, 
+      {img: 'https://i.scdn.co/image/ab67616d00001e02709a2b476833289c2067ec15',fileLocation: TumMera,songName: 'Tum Mera' ,singer: 'Nusrat Fateh Ali Khan'}, 
       {img: 'https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae',fileLocation: Twonintyfive, songName: '295' ,singer: 'Sidhu Moose Wala' }, 
       {img: 'https://i.scdn.co/image/ab67616d00001e02b5e6c9ce5bb77c1607780315' ,fileLocation: TeraVaaste, songName: 'Tere Vaaste' ,singer: 'Varun Jain, Sachin- Jigar, Shadab Faridi, and Altamash Faridi.'},
       {img: 'https://tse2.mm.bing.net/th?id=OIP.ae-N_0l39F2RjRjLpSrDKwAAAA&pid=Api&P=0&h=180',fileLocation: Vaaste, songName: 'Vaaste' ,singer: 'Dhvani Bhanushali,Nikhil DSouza' },
       {img: 'https://i.scdn.co/image/ab67616d00001e0273b0435dbfea11043c2909b8' ,fileLocation: ZihalMuskin, songName: 'Zihal e Muskin' ,singer: 'Vishal Mishra & Shreya Ghoshal' }, 
-      ]
+    ]
 
     const [activeIndex, setActiveIndex] = useState(null);
     const [isPlaying, setIsPlaying] = useState(false);
@@ -117,14 +119,7 @@ import {
     const [duration, setDuration] = useState(0);
     const [homeHeight,setHomeHeight] = useState("95vh")
     const [playlist,setPlaylist] = useState(newcollection)
-   
-    // function winback() {
-    //   history.go(1)
-    // }
 
-    // function winforward() {
-    //   history.go(-1)
-    // }
     const playlistchangera = () =>{
       setPlaylist(newcollection)
   
@@ -316,14 +311,7 @@ import {
         </div>
        
       ))  
-      // window.addEventListener('keydown', function key(e) {
-      //   let press = "Pressed key is:" + e.key;
-      //   console.log(press)
-      // if (audioPlayer.current.play()) {
-      //   if (e.key == " ") {
-      //     togglePlay()
-      //   }
-      // }})
+
 
     return (
         <>
